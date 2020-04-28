@@ -45,7 +45,7 @@ class BaseTabBarController: UITabBarController {
         ]
         
         let controllers = [
-                "HomeViewController",
+                "HomeController",
                 "TopicController",
                 "BaseViewController",
                 "LifeController",

@@ -16,3 +16,7 @@ func UIColorFromHex(rgbValue: UInt) -> UIColor {
         alpha: CGFloat(1.0)
     )
 }
+
+func kRandomColor() -> UIColor {
+    return UIColor (red: CGFloat(arc4random_uniform(255))/255.0, green:  CGFloat(arc4random_uniform(255))/255.0, blue:  CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
+}

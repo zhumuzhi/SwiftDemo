@@ -10,6 +10,10 @@
 		3EBB58E92457C02D0084FDCC /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58E82457C02D0084FDCC /* BaseTabBarController.swift */; };
 		3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58EA2457C3150084FDCC /* BaseViewController.swift */; };
 		3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */; };
+		3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F32457CAA00084FDCC /* HomeController.swift */; };
+		3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F52457CAB20084FDCC /* TopicController.swift */; };
+		3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F72457CAC30084FDCC /* LifeController.swift */; };
+		3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F92457CACF0084FDCC /* MineController.swift */; };
 		3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1923D4733F0054A537 /* AppDelegate.swift */; };
 		3EEEAE1C23D4733F0054A537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1B23D4733F0054A537 /* SceneDelegate.swift */; };
 		3EEEAE1E23D4733F0054A537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1D23D4733F0054A537 /* ViewController.swift */; };
@@ -22,6 +26,10 @@
 		3EBB58E82457C02D0084FDCC /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3EBB58EA2457C3150084FDCC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFontDefine.swift; sourceTree = "<group>"; };
+		3EBB58F32457CAA00084FDCC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		3EBB58F52457CAB20084FDCC /* TopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
+		3EBB58F72457CAC30084FDCC /* LifeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeController.swift; sourceTree = "<group>"; };
+		3EBB58F92457CACF0084FDCC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 		3EEEAE1623D4733F0054A537 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEEAE1923D4733F0054A537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEEAE1B23D4733F0054A537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 		3EBB58E62457BFA10084FDCC /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
+				3EBB58EF2457CA5E0084FDCC /* Home */,
+				3EBB58F02457CA670084FDCC /* Topic */,
+				3EBB58F12457CA730084FDCC /* Life */,
+				3EBB58F22457CA7F0084FDCC /* Mine */,
 				3EBB58E72457BFBA0084FDCC /* Appdelegate */,
 			);
 			path = FunctionModule;
@@ -84,6 +96,38 @@
 				3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */,
 			);
 			path = define;
+			sourceTree = "<group>";
+		};
+		3EBB58EF2457CA5E0084FDCC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58F32457CAA00084FDCC /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3EBB58F02457CA670084FDCC /* Topic */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58F52457CAB20084FDCC /* TopicController.swift */,
+			);
+			path = Topic;
+			sourceTree = "<group>";
+		};
+		3EBB58F12457CA730084FDCC /* Life */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58F72457CAC30084FDCC /* LifeController.swift */,
+			);
+			path = Life;
+			sourceTree = "<group>";
+		};
+		3EBB58F22457CA7F0084FDCC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58F92457CACF0084FDCC /* MineController.swift */,
+			);
+			path = Mine;
 			sourceTree = "<group>";
 		};
 		3EEEAE0D23D4733F0054A537 = {
@@ -189,9 +233,13 @@
 			files = (
 				3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */,
 				3EBB58E92457C02D0084FDCC /* BaseTabBarController.swift in Sources */,
+				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
+				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
 				3EEEAE1E23D4733F0054A537 /* ViewController.swift in Sources */,
 				3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */,
 				3EEEAE1C23D4733F0054A537 /* SceneDelegate.swift in Sources */,
+				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,
+				3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */,
 				3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
