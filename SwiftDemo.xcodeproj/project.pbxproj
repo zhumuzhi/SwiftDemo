@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E4FCEC42457FA050017F883 /* DeviceDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FCEC32457FA050017F883 /* DeviceDefine.swift */; };
 		3EBB58E92457C02D0084FDCC /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58E82457C02D0084FDCC /* BaseTabBarController.swift */; };
 		3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58EA2457C3150084FDCC /* BaseViewController.swift */; };
 		3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */; };
@@ -16,13 +17,12 @@
 		3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F92457CACF0084FDCC /* MineController.swift */; };
 		3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1923D4733F0054A537 /* AppDelegate.swift */; };
 		3EEEAE1C23D4733F0054A537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1B23D4733F0054A537 /* SceneDelegate.swift */; };
-		3EEEAE1E23D4733F0054A537 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1D23D4733F0054A537 /* ViewController.swift */; };
-		3EEEAE2123D4733F0054A537 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1F23D4733F0054A537 /* Main.storyboard */; };
 		3EEEAE2323D473420054A537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2223D473420054A537 /* Assets.xcassets */; };
 		3EEEAE2623D473420054A537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E4FCEC32457FA050017F883 /* DeviceDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDefine.swift; sourceTree = "<group>"; };
 		3EBB58E82457C02D0084FDCC /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3EBB58EA2457C3150084FDCC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFontDefine.swift; sourceTree = "<group>"; };
@@ -33,8 +33,6 @@
 		3EEEAE1623D4733F0054A537 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEEAE1923D4733F0054A537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEEAE1B23D4733F0054A537 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EEEAE1D23D4733F0054A537 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EEEAE2023D4733F0054A537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EEEAE2223D473420054A537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EEEAE2523D473420054A537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EEEAE2723D473420054A537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */,
+				3E4FCEC32457FA050017F883 /* DeviceDefine.swift */,
 			);
 			path = define;
 			sourceTree = "<group>";
@@ -151,8 +150,6 @@
 			children = (
 				3EBB58E62457BFA10084FDCC /* FunctionModule */,
 				3EBB58E42457BF630084FDCC /* Support */,
-				3EEEAE1D23D4733F0054A537 /* ViewController.swift */,
-				3EEEAE1F23D4733F0054A537 /* Main.storyboard */,
 				3EEEAE2223D473420054A537 /* Assets.xcassets */,
 				3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */,
 				3EEEAE2723D473420054A537 /* Info.plist */,
@@ -220,7 +217,6 @@
 			files = (
 				3EEEAE2623D473420054A537 /* LaunchScreen.storyboard in Resources */,
 				3EEEAE2323D473420054A537 /* Assets.xcassets in Resources */,
-				3EEEAE2123D4733F0054A537 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +231,7 @@
 				3EBB58E92457C02D0084FDCC /* BaseTabBarController.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
 				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
-				3EEEAE1E23D4733F0054A537 /* ViewController.swift in Sources */,
+				3E4FCEC42457FA050017F883 /* DeviceDefine.swift in Sources */,
 				3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */,
 				3EEEAE1C23D4733F0054A537 /* SceneDelegate.swift in Sources */,
 				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,
@@ -247,14 +243,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3EEEAE1F23D4733F0054A537 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3EEEAE2023D4733F0054A537 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
