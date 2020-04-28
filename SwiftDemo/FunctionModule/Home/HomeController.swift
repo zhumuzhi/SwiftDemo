@@ -9,13 +9,42 @@
 import UIKit
 
 class HomeController: UIViewController {
+    
+    // MARK:- Property
+    
+    
 
+    // MARK:- LifeCycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = kRandomColor();
         
     }
+    
+    private lazy var sexTypeButton: UIButton = {
+        let button = UIButton(type: .custom)
+        button.setTitleColor(UIColor.black, for: .normal)
+        button.addTarget(self, action: #selector(changeSex), for: .touchUpInside)
+        return button
+    }()
+    
+    
+//    private lazy var collectionView: UICollectionView  = {
+//        let layout = UICollectionViewSecti
+//
+//    }
+    
+    
+    
+    
+    // MARK:- Method
+    
+    @objc private func changeSex() {
+        
+    }
+    
     
 
 }
