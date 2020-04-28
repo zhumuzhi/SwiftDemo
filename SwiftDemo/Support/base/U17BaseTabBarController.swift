@@ -1,14 +1,15 @@
 //
-//  BaseTabBarController.swift
-//  SwiftDemo
+//  U17BaseTabBarController.swift
+//  U17
 //
-//  Created by zhumuzhi on 2020/4/28.
-//  Copyright © 2020 zhumuzhi. All rights reserved.
-//
+//  Created by charles on 2017/9/29.
+//  Copyright © 2017年 None. All rights reserved.
+
+//  U17TabBar设置方式
 
 import UIKit
 
-class BaseTabBarController: UITabBarController {
+class U17BaseTabBarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,20 +23,23 @@ class BaseTabBarController: UITabBarController {
                                image: UIImage(named: "tabbar_home"),
                                selectedImage: UIImage(named: "tabbar_home_selected"))
         
-        /// 消息
-        let topicVC = TopicController()
-        addChildViewController(topicVC,
+        
+        /// 分类
+        let classVC = TopicController()
+        addChildViewController(classVC,
+                               title: "发现",
+                               image: UIImage(named: "tabbar_discover"),
+                               selectedImage: UIImage(named: "tabbar_discover_selected"))
+        
+        
+        /// 书架
+        let bookVC = LifeController()
+        addChildViewController(bookVC,
                                title: "消息",
                                image: UIImage(named: "tabbar_message_center"),
                                selectedImage: UIImage(named: "tabbar_message_center_selected"))
         
-        /// 发现
-        let lifeVC = LifeController()
-        addChildViewController(lifeVC,
-                               title: "发现",
-                               image: UIImage(named: "tabbar_discover"),
-                               selectedImage: UIImage(named: "tabbar_discover_selected"))
-                
+        
         /// 我的
         let mineVC = MineController()
         addChildViewController(mineVC,
@@ -49,15 +53,21 @@ class BaseTabBarController: UITabBarController {
     func addChildViewController(_ childController: UIViewController, title:String?, image:UIImage? ,selectedImage:UIImage?) {
         
         childController.title = title
-        childController.tabBarItem = UITabBarItem(title: title,
+        childController.tabBarItem = UITabBarItem(title: nil,
                                                   image: image?.withRenderingMode(.alwaysOriginal),
                                                   selectedImage: selectedImage?.withRenderingMode(.alwaysOriginal))
         
-//        if UIDevice.current.userInterfaceIdiom == .phone {
-//            childController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-//        }
-        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            childController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        }
         addChild(UINavigationController(rootViewController: childController))
     }
     
+}
+
+extension U17BaseTabBarController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        guard let select = selectedViewController else { return .lightContent }
+        return select.preferredStatusBarStyle
+    }
 }
