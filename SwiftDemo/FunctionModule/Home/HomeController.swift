@@ -21,6 +21,8 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         view.backgroundColor = kRandomColor();
         
+        self.view.addSubview(collectionView)
+        
     }
     
     // MARK:- ConfigUI
@@ -46,43 +48,33 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     }()
     
     private lazy var collectionView: UICollectionView  = {
-        let layout = UCollectionViewSectionBackgroundLayout()
+//        let layout = UCollectionViewSectionBackgroundLayout()
+        let layout = UICollectionViewFlowLayout()
         layout.minimumInteritemSpacing = 5
         layout.minimumLineSpacing = 10
 
-        let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect(x:0, y:64, width:kScreenWidth, height:kScreenHeight-64), collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.alwaysBounceVertical = true
-        collectionView.contentInset = UIEdgeInsets(top: kScreenWidth * 0.467, left: 0, bottom: 0, right: 0)
+//        collectionView.contentInset = UIEdgeInsets(top: kScreenWidth * 0.467, left: 0, bottom: 0, right: 0)
         collectionView.scrollIndicatorInsets = collectionView.contentInset
-        
-        
+        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"UICollectionViewCell")
         return collectionView
     }()
-    
-    
-    
-    
-    
-    
-    
     
     // MARK:- UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+        155
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
+        cell.backgroundColor = UIColor.randomColor()
         return cell
     }
-    
-    
-    
-    
     
 
 }
