@@ -1,0 +1,26 @@
+PODS:
+  - HandyJSON (5.0.1)
+  - Kingfisher (5.13.4):
+    - Kingfisher/Core (= 5.13.4)
+  - Kingfisher/Core (5.13.4)
+  - LLCycleScrollView (1.6.0):
+    - Kingfisher
+
+DEPENDENCIES:
+  - HandyJSON
+  - LLCycleScrollView
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - HandyJSON
+    - Kingfisher
+    - LLCycleScrollView
+
+SPEC CHECKSUMS:
+  HandyJSON: d45b8415c501e3affc59ca9762c1197ff0feb646
+  Kingfisher: d2279a7abece3c7f25a80cd2b7f363ca5cf3f44c
+  LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
+
+PODFILE CHECKSUM: 591b099fdcb1f9a3f6fb556da7dbb10035baecd4
+
+COCOAPODS: 1.9.0.beta.3
