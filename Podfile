@@ -10,7 +10,10 @@ target 'SwiftDemo' do
   # Pods for SwiftDemo
 
 
-pod 'HandyJSON'
 pod 'LLCycleScrollView'
+  
+pod 'HandyJSON'
+
+pod 'SnapKit'
 
 end

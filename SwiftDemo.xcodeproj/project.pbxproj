@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,10 @@
 		3E4FCEC624580B5C0017F883 /* U17BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FCEC524580B5B0017F883 /* U17BaseTabBarController.swift */; };
 		3E4FCEC8245820D60017F883 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FCEC7245820D60017F883 /* BaseTabBarController.swift */; };
 		3E4FCECD245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FCECC245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift */; };
+		3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D0245AB16000F27D89 /* HomeComicCell.swift */; };
+		3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */; };
+		3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D6245ABAA900F27D89 /* BaseCollectionViewCell.swift */; };
+		3E9097D9245ABBDD00F27D89 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D8245ABBDD00F27D89 /* Global.swift */; };
 		3EBB58E92457C02D0084FDCC /* DCTTBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58E82457C02D0084FDCC /* DCTTBaseTabBarController.swift */; };
 		3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58EA2457C3150084FDCC /* BaseViewController.swift */; };
 		3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */; };
@@ -31,6 +35,10 @@
 		3E4FCEC524580B5B0017F883 /* U17BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U17BaseTabBarController.swift; sourceTree = "<group>"; };
 		3E4FCEC7245820D60017F883 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3E4FCECC245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
+		3E9097D0245AB16000F27D89 /* HomeComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComicCell.swift; sourceTree = "<group>"; };
+		3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardCell.swift; sourceTree = "<group>"; };
+		3E9097D6245ABAA900F27D89 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		3E9097D8245ABBDD00F27D89 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		3EBB58E82457C02D0084FDCC /* DCTTBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCTTBaseTabBarController.swift; sourceTree = "<group>"; };
 		3EBB58EA2457C3150084FDCC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFontDefine.swift; sourceTree = "<group>"; };
@@ -74,6 +82,42 @@
 			path = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
+		3E9097CE245AB12300F27D89 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58F32457CAA00084FDCC /* HomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3E9097CF245AB12C00F27D89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3E9097D0245AB16000F27D89 /* HomeComicCell.swift */,
+				3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3E9097D4245ABA6100F27D89 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBB58E82457C02D0084FDCC /* DCTTBaseTabBarController.swift */,
+				3E4FCEC524580B5B0017F883 /* U17BaseTabBarController.swift */,
+				3E4FCEC7245820D60017F883 /* BaseTabBarController.swift */,
+				3EBB58EA2457C3150084FDCC /* BaseViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		3E9097D5245ABA7100F27D89 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3E9097D6245ABAA900F27D89 /* BaseCollectionViewCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		3EBB58E42457BF630084FDCC /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,10 +131,8 @@
 		3EBB58E52457BF730084FDCC /* base */ = {
 			isa = PBXGroup;
 			children = (
-				3EBB58E82457C02D0084FDCC /* DCTTBaseTabBarController.swift */,
-				3E4FCEC524580B5B0017F883 /* U17BaseTabBarController.swift */,
-				3E4FCEC7245820D60017F883 /* BaseTabBarController.swift */,
-				3EBB58EA2457C3150084FDCC /* BaseViewController.swift */,
+				3E9097D5245ABA7100F27D89 /* view */,
+				3E9097D4245ABA6100F27D89 /* controller */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -120,6 +162,7 @@
 			children = (
 				3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */,
 				3E4FCEC32457FA050017F883 /* DeviceDefine.swift */,
+				3E9097D8245ABBDD00F27D89 /* Global.swift */,
 			);
 			path = define;
 			sourceTree = "<group>";
@@ -127,7 +170,8 @@
 		3EBB58EF2457CA5E0084FDCC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3EBB58F32457CAA00084FDCC /* HomeController.swift */,
+				3E9097CF245AB12C00F27D89 /* View */,
+				3E9097CE245AB12300F27D89 /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -192,7 +236,6 @@
 				0CB84FE00A51644E3AB15849 /* Pods-SwiftDemo.debug.xcconfig */,
 				3B24E0ADFF0EBB5436AB0619 /* Pods-SwiftDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -321,15 +364,19 @@
 				3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */,
 				3EBB58E92457C02D0084FDCC /* DCTTBaseTabBarController.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
+				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
 				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
+				3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */,
 				3E4FCEC42457FA050017F883 /* DeviceDefine.swift in Sources */,
 				3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */,
+				3E9097D9245ABBDD00F27D89 /* Global.swift in Sources */,
 				3E4FCECD245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3E4FCEC8245820D60017F883 /* BaseTabBarController.swift in Sources */,
 				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,
 				3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */,
 				3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */,
 				3E4FCEC624580B5C0017F883 /* U17BaseTabBarController.swift in Sources */,
+				3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
