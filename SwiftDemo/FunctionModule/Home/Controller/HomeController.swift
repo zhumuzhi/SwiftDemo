@@ -53,7 +53,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         layout.minimumInteritemSpacing = 5
         layout.minimumLineSpacing = 10
 
-        let collectionView = UICollectionView(frame: CGRect(x:0, y:64, width:kScreenWidth, height:kScreenHeight-64), collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect(x:0, y:CGFloat(kSafeAreaTopHeight), width:kScreenWidth, height:kScreenHeight - CGFloat(kSafeAreaTopHeight) - CGFloat(kBottomAreaHeight)), collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.dataSource = self
         collectionView.delegate = self
