@@ -29,6 +29,10 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     
     
+    // MARK:- LoadData
+    
+    
+    
     
     
     // MARK:- Method

@@ -13,6 +13,8 @@
 		3E4FCECD245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4FCECC245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift */; };
 		3E7C91472462905200712328 /* StringDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C91462462905200712328 /* StringDefine.swift */; };
 		3E7C914A2462935A00712328 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C91492462935A00712328 /* UIScreenExtension.swift */; };
+		3E7C914D24629D6600712328 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C914C24629D6600712328 /* HomeModel.swift */; };
+		3E7C91502462A2EF00712328 /* U17API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C914F2462A2EF00712328 /* U17API.swift */; };
 		3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D0245AB16000F27D89 /* HomeComicCell.swift */; };
 		3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */; };
 		3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D6245ABAA900F27D89 /* BaseCollectionViewCell.swift */; };
@@ -39,6 +41,8 @@
 		3E4FCECC245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UCollectionViewSectionBackgroundLayout.swift; sourceTree = "<group>"; };
 		3E7C91462462905200712328 /* StringDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDefine.swift; sourceTree = "<group>"; };
 		3E7C91492462935A00712328 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
+		3E7C914C24629D6600712328 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		3E7C914F2462A2EF00712328 /* U17API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17API.swift; sourceTree = "<group>"; };
 		3E9097D0245AB16000F27D89 /* HomeComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComicCell.swift; sourceTree = "<group>"; };
 		3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardCell.swift; sourceTree = "<group>"; };
 		3E9097D6245ABAA900F27D89 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -94,6 +98,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		3E7C914B24629D3500712328 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C914C24629D6600712328 /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7C914E2462A2D800712328 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C914F2462A2EF00712328 /* U17API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		3E9097CE245AB12300F27D89 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +153,7 @@
 		3EBB58E42457BF630084FDCC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				3E7C914E2462A2D800712328 /* API */,
 				3E7C91482462932D00712328 /* Extension */,
 				3E4FCECA245857490017F883 /* component */,
 				3EBB58EC2457C3AB0084FDCC /* define */,
@@ -184,8 +205,9 @@
 		3EBB58EF2457CA5E0084FDCC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3E9097CF245AB12C00F27D89 /* View */,
+				3E7C914B24629D3500712328 /* Model */,
 				3E9097CE245AB12300F27D89 /* Controller */,
+				3E9097CF245AB12C00F27D89 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -379,7 +401,9 @@
 				3E7C914A2462935A00712328 /* UIScreenExtension.swift in Sources */,
 				3E7C91472462905200712328 /* StringDefine.swift in Sources */,
 				3EBB58E92457C02D0084FDCC /* DCTTBaseTabBarController.swift in Sources */,
+				3E7C914D24629D6600712328 /* HomeModel.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
+				3E7C91502462A2EF00712328 /* U17API.swift in Sources */,
 				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
 				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
 				3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */,

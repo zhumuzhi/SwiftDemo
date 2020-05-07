@@ -9,11 +9,23 @@ target 'SwiftDemo' do
 
   # Pods for SwiftDemo
 
+# 网络请求
+pod 'Moya'
 
-pod 'LLCycleScrollView'
-  
+# 数据处理
 pod 'HandyJSON'
 
+# 页面布局
 pod 'SnapKit'
 
+# 图片轮播
+pod 'LLCycleScrollView'
+
+# HUD
+pod 'MBProgressHUD'
+
+
+
+
 end
+
