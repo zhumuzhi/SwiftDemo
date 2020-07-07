@@ -13,6 +13,7 @@ pod 'Moya'
 
 # 数据处理
 pod 'HandyJSON'
+pod 'SwiftyJSON'
 
 # 页面布局
 pod 'SnapKit'
