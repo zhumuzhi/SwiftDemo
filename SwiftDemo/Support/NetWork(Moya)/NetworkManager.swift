@@ -24,7 +24,7 @@ typealias errorCallback = (() -> Void)
 
 
 /// 网络请求的基本设置,这里可以拿到是具体的哪个网络请求，可以在这里做一些设置
-private let myEndpointClosure = { (target: API) -> Endpoint in
+private let endpointClosure = { (target: API) -> Endpoint in
     /// 这里把endpoint重新构造一遍主要为了解决网络请求地址里面含有? 时无法解析的bug https://github.com/Moya/Moya/issues/1198
     let url = target.baseURL.absoluteString + target.path
     var task = target.task
@@ -129,7 +129,7 @@ private let networkPlugin = NetworkActivityPlugin.init { changeType, _ in
 // stubClosure   用来延时发送网络请求
 
 /// /网络请求发送的核心初始化方法，创建网络请求对象
-let Provider = MoyaProvider<API>(endpointClosure: myEndpointClosure, requestClosure: requestClosure, plugins: [networkPlugin], trackInflights: false)
+let Provider = MoyaProvider<API>(endpointClosure: endpointClosure, requestClosure: requestClosure, plugins: [networkPlugin], trackInflights: false)
 
 /// 最常用的网络请求，只需知道正确的结果无需其他操作时候用这个 (可以给调用的NetWorkReques方法的写参数默认值达到一样的效果,这里为解释方便做抽出来二次封装)
 ///
