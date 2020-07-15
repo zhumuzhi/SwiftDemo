@@ -19,10 +19,11 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = kRandomColor();
+        view.backgroundColor = kRandomColor()
         
         self.view.addSubview(collectionView)
         
+        self .testAPI()
     }
     
     // MARK:- ConfigUI
@@ -31,9 +32,15 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     // MARK:- LoadData
     
-    
-    
-    
+    func testAPI() {
+        
+        NetWorkRequest(.easyRequset, completion: { (returnData) in
+            NSLog("returnData:\(returnData)")
+        }) { (error) in
+            NSLog("error:" + error)
+        }
+        
+    }
     
     // MARK:- Method
     

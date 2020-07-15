@@ -10,6 +10,7 @@ target 'SwiftDemo' do
 
 # 网络请求
 pod 'Moya'
+pod 'AFNetworking'
 
 # 数据处理
 pod 'HandyJSON'

@@ -171,18 +171,16 @@ func NetWorkRequest(_ target: API, completion: @escaping successCallback, failed
         case let .success(response):
             do {
                 let jsonData = try JSON(data: response.data)
-                print(jsonData)
-                //               这里的completion和failed判断条件依据不同项目来做，为演示demo我把判断条件注释了，直接返回completion。
-
+//                print(jsonData)
+                // 这里的completion和failed判断条件依据不同项目来做，为演示demo我把判断条件注释了，直接返回completion。
                 completion(String(data: response.data, encoding: String.Encoding.utf8)!)
 
                 print("flag不为1000 HUD显示后台返回message" + "\(jsonData[RESULT_MESSAGE].stringValue)")
-
-                //                if jsonData[RESULT_CODE].stringValue == "1000"{
-                //                    completion(String(data: response.data, encoding: String.Encoding.utf8)!)
-                //                }else{
-                //                    failed?(String(data: response.data, encoding: String.Encoding.utf8)!)
-                //                }
+                if jsonData[RESULT_CODE].stringValue == "1000"{
+                    completion(String(data: response.data, encoding: String.Encoding.utf8)!)
+                }else{
+                    failed?(String(data: response.data, encoding: String.Encoding.utf8)!)
+                }
 
             } catch {}
         case let .failure(error):
