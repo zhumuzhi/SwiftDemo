@@ -20,6 +20,8 @@
 		3E7C91472462905200712328 /* StringDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C91462462905200712328 /* StringDefine.swift */; };
 		3E7C914A2462935A00712328 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C91492462935A00712328 /* UIScreenExtension.swift */; };
 		3E7C914D24629D6600712328 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C914C24629D6600712328 /* HomeModel.swift */; };
+		3E8520F224C6B76D0045B465 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8520F124C6B76D0045B465 /* testController.swift */; };
+		3E8520F424C6C4540045B465 /* InterfaceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8520F324C6C4540045B465 /* InterfaceServer.swift */; };
 		3E89313024BECBA3008DFB8F /* RequestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89312F24BECBA3008DFB8F /* RequestBase.swift */; };
 		3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D0245AB16000F27D89 /* HomeComicCell.swift */; };
 		3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */; };
@@ -54,6 +56,8 @@
 		3E7C91462462905200712328 /* StringDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringDefine.swift; sourceTree = "<group>"; };
 		3E7C91492462935A00712328 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		3E7C914C24629D6600712328 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		3E8520F124C6B76D0045B465 /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
+		3E8520F324C6C4540045B465 /* InterfaceServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceServer.swift; sourceTree = "<group>"; };
 		3E89312F24BECBA3008DFB8F /* RequestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBase.swift; sourceTree = "<group>"; };
 		3E9097D0245AB16000F27D89 /* HomeComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComicCell.swift; sourceTree = "<group>"; };
 		3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardCell.swift; sourceTree = "<group>"; };
@@ -149,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89312F24BECBA3008DFB8F /* RequestBase.swift */,
+				3E8520F324C6C4540045B465 /* InterfaceServer.swift */,
 			);
 			path = NetWorkAFN;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 		3EBB58E62457BFA10084FDCC /* FunctionModule */ = {
 			isa = PBXGroup;
 			children = (
+				3E8520F124C6B76D0045B465 /* testController.swift */,
 				3EBB58EF2457CA5E0084FDCC /* Home */,
 				3EBB58F02457CA670084FDCC /* Topic */,
 				3EBB58F12457CA730084FDCC /* Life */,
@@ -447,6 +453,7 @@
 				3E7C914D24629D6600712328 /* HomeModel.swift in Sources */,
 				3E4B5FBC24AF0B42006351B0 /* API.swift in Sources */,
 				3E4B5FAF24ADDEF8006351B0 /* DictionaryExtension.swift in Sources */,
+				3E8520F424C6C4540045B465 /* InterfaceServer.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
 				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
 				3E89313024BECBA3008DFB8F /* RequestBase.swift in Sources */,
@@ -454,6 +461,7 @@
 				3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */,
 				3E4B5FC324B459B9006351B0 /* MoyaConfig.swift in Sources */,
 				3E4B5FB424AF084A006351B0 /* NetworkManager.swift in Sources */,
+				3E8520F224C6B76D0045B465 /* testController.swift in Sources */,
 				3E4FCEC42457FA050017F883 /* DeviceDefine.swift in Sources */,
 				3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */,
 				3E9097D9245ABBDD00F27D89 /* Global.swift in Sources */,

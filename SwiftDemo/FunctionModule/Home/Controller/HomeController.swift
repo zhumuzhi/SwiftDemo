@@ -24,10 +24,19 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         self.view.addSubview(collectionView)
         
         self .testAPI()
+        
+        let URL = "[self .getBaseUrl()]" + "list/commonComicList"
+        
+        RequestBase.getRequest(url: URL, param: nil, tag: "1", retry: 0, progress: nil, success: { (Obj) in
+            let dic = Obj
+            print("Obj%@", dic)
+        }) { (Error) in
+            
+        }
+        
     }
     
     // MARK:- ConfigUI
-    
     
     
     // MARK:- LoadData
@@ -87,5 +96,4 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
-
 }

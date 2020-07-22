@@ -169,9 +169,9 @@ class RequestBase: NSObject {
     ///   - progress: 进度回调
     ///   - success: 成功回调
     ///   - failure: 失败回调
-    class func uploadFileRequest(url: String, param: Any, file: String, tag: String?, retry: NSInteger, progress: progressBlock?, success: successBlock?, failure: failureBlock?){
+    public class func uploadFileRequest(url: String, param: Any, file: String, tag: String?, retry: NSInteger, progress: progressBlock?, success: successBlock?, failure: failureBlock?){
         
-        let task = manager.post(url, parameters: param, constructingBodyWith: { (formData) in
+        let task = manager.post(url, parameters: param, headers: nil, constructingBodyWith: { (formData) in
             //获取data
             if let data = NSData(contentsOfFile: file) {
                 //进行上传
@@ -213,7 +213,7 @@ class RequestBase: NSObject {
     ///   - success: 成功回调
     ///   - failure: 失败回调
     public class func uploadFilesRequest(url: String, param: Any, files: [String], tag: String?, retry: NSInteger, progress: progressBlock?, success: successBlock?, failure: failureBlock?){
-        let task = manager.post(url, parameters: param, constructingBodyWith: { (formData) in
+        let task = manager.post(url, parameters: param, headers: nil, constructingBodyWith: { (formData) in
             
             for file in files {
                 //获取data
