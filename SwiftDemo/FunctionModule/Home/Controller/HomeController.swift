@@ -19,7 +19,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = kRandomColor()
+        view.backgroundColor = UIColor.white
         
         self.view.addSubview(collectionView)
         

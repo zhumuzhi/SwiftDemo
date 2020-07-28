@@ -1,15 +1,14 @@
 //
-//  TopicController.swift
+//  nameListController.swift
 //  SwiftDemo
 //
-//  Created by zhumuzhi on 2020/4/28.
+//  Created by zhumuzhi on 2020/7/28.
 //  Copyright © 2020 zhumuzhi. All rights reserved.
 //
 
 import UIKit
-import Foundation
 
-class TopicController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class nameListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var dataArray = [String]()
     
@@ -84,3 +83,46 @@ class TopicController: UIViewController, UITableViewDataSource, UITableViewDeleg
     
 }
 
+
+/** 随机产生字符串
+    parameters:
+    - number 字符串长度
+    - digital 是否包含数字
+    - capital 是否包含大写
+    - lowercase 是否包含小写
+ */
+func getRandomString(_ number:Int! ,_ digital:Bool!,_ capital:Bool!,_ lowercase:Bool!) -> String{
+    var number:Int! = number
+    if number < 1 {
+        number = 32
+    }
+    
+    var strArray:Array<String> = Array()
+    for _ in 0...INT64_MAX {
+        let a:Int = Int(arc4random() % 122)
+        let c:Character = Character(UnicodeScalar(a)!)
+        //包含数字
+        if digital {
+            if a > 47 && a < 58{
+                 strArray.append(String.init(c))
+            }
+        }
+        //大写字母
+        if capital {
+            if a > 64 && a < 92 {
+                strArray.append(String.init(c))
+            }
+        }
+        //小写字母
+        if lowercase {
+            if a > 96 && a < 123 {
+                strArray.append(String.init(c))
+            }
+        }
+        if strArray.count == number{
+            break
+        }
+    }
+    let str:String = strArray.joined(separator: "")
+    return str;
+}
