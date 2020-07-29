@@ -19,14 +19,14 @@ pod 'SwiftyJSON'
 # 页面布局
 pod 'SnapKit'
 
-# 图片轮播
-pod 'LLCycleScrollView'
+# ========== UI组件 ==========
 
 # HUD
 pod 'MBProgressHUD'
-
-
-
+# 图片轮播
+pod 'LLCycleScrollView'
+# Segment
+pod 'HMSegmentedControl'
 
 end
 

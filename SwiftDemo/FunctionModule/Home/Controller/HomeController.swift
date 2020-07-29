@@ -28,7 +28,7 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        InterfaceServer.getComicList()
+        InterfaceServer.getCateList()
     }
     
     

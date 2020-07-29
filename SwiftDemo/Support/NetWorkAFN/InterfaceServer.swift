@@ -19,16 +19,16 @@ class InterfaceServer: NSObject {
         return "http://app.u17.com/v3/appV3_3/ios/phone"
     }
     
-    class func getComicList () {
-        
-        let URL = "http://app.u17.com/v3/appV3_3/ios/phone" + "/list/commonComicList"
-        
+    //MARK: - 获取分类列表
+    class func getCateList () {
+        let URL = "http://app.u17.com/v3/appV3_3/ios/phone" + "/sort/mobileCateList"
         let task = RequestBase.getRequest(url: URL, params: nil, tag: nil, retry: 0, progress: nil, success: { (task, result) in
-            
-            print("成功的task:\(String(describing: task))，请求的result:\(String(describing: result))")
+            print(result!)
         }) { (task, Error) in
-            
-            print("失败的task:\(String(describing: task))，请求的Error:\(String(describing: Error))")
+            if Error != nil {
+                print(Error!)
+                return
+            }
         }
         NSLog("==%@", task)
     }
