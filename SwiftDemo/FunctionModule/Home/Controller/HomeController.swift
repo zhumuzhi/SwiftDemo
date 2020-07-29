@@ -23,35 +23,24 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
         
         self.view.addSubview(collectionView)
         
-        self .testAPI()
-        
-//        let URL = "[self .getBaseUrl()]" + "list/commonComicList"
-//        RequestBase.getRequest(url: URL, param: nil, tag: "1", retry: 0, progress: nil, success: { (Obj) in
-//            let dic = Obj
-//            print("Obj%@", dic)
-//        }) { (Error) in
-//        }
         
     }
     
-    // MARK:- ConfigUI
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        InterfaceServer.getComicList()
+    }
+    
     
     
     // MARK:- LoadData
     
-    func testAPI() {
-        
-        NetWorkRequest(.easyRequset, completion: { (returnData) in
-            NSLog("returnData:\(returnData)")
-        }) { (error) in
-            NSLog("error:" + error)
-        }
-        
-    }
+
     
     // MARK:- Method
     
     @objc private func changeSex() {
+        
         
     }
     

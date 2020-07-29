@@ -9,6 +9,13 @@
 import UIKit
 import AFNetworking
 
+// 成功回调
+typealias successBlock = (URLSessionDataTask?, Any?) -> Void
+// 失败回调
+typealias failureBlock = (URLSessionDataTask?, Error?) -> Void
+// 进度回调
+typealias progressBlock = (Progress) -> Void
+
 let kTimeoutInterval = 60.0
 
 enum RequestMethod {
@@ -83,53 +90,8 @@ class RequestBase: NSObject {
         sessionManager.get(urlString, parameters: parameters, headers: nil, progress: nil, success: successCallBack, failure: failureCallBack)
     }
     
-    // 成功回调
-    typealias successBlock = (URLSessionDataTask?, Any?) -> Void
-    // 失败回调
-    typealias failureBlock = (URLSessionDataTask?, Error) -> Void
-    // 进度回调
-    typealias progressBlock = (Progress) -> Void
     
-    //MARK: - GET
-    class func getRequest(url: String, params: Any?, tag: String?, retry: NSInteger, progress:progressBlock?, success: successBlock?, failure: failureBlock?) {
-        
-        let sessionManager = self.getSessionManger()
-        sessionManager.requestSerializer.timeoutInterval = kTimeoutInterval       // 请求超时设置
-        
-//        sessionManager.get(url, parameters: params, headers: nil, progress: nil, success: successBlock, failure: failureBlock)
-        
-//        let dataTask = sessionManager .get(url, parameters: param, headers: nil, progress: progress, success: { (task, Any) in
-        
-//            if(successBlock) {
-//                successBlock(Any)
-//            }
-        
-//        }) { (task, error) in
-        
-//        }
-        
-        // 成功 - 移除队列
-//        let task = manager.get(url, parameters: param, headers: nil, progress: progress, success: { (task, responseObj) in
-//            RequestBase.cancelRequest(key: tag)
-//            print("GET请求地址\n" + (task.response?.url?.absoluteString ?? "") + "\n")
-//            print(responseObj as Any)
-//            success?(responseObj as Any)
-//        }) { (task, error) in
-            // 失败 - 移除队列
-//            RequestBase.cancelRequest(key: tag)
-//            if retry > 0 {
-//                self.getRequest(url: url, param: param, tag: tag, retry: (retry - 1), progress: progress, success: success, failure: failure)
-//            }else {
-//                failure?(error)
-//            }
-//        }
-        
-//        if let key: String = tag {
-//            netQueue[key] = task
-//        }
-        
-    }
-    
+//MARK: - GET
     /// Get请求
     /// - Parameters:
     ///   - url: URL地址
@@ -139,19 +101,45 @@ class RequestBase: NSObject {
     ///   - progress: 进度回调
     ///   - success: 成功回调
     ///   - failure: 失败回调
+    class func getRequest(url: String, params: Any?, tag: String?, retry: NSInteger, progress:progressBlock?, success:@escaping successBlock, failure:@escaping failureBlock) -> URLSessionDataTask {
+        
+        let sessionManager = self.getSessionManger()
+        sessionManager.requestSerializer.timeoutInterval = kTimeoutInterval       // 请求超时设置
+        
+        let dataTask = sessionManager.get(url, parameters: params, headers: nil, progress: nil, success: { (task, result) in
+            success(task, result)
+        }, failure: { (task, Error) in
+            failure(task, Error)
+        })
+        
+        return dataTask!
+    }
+    
+//MARK: - POST
+   /// POST请求
+   ///
+   /// - Parameters:
+   ///   - url: 地址
+   ///   - param: 参数
+   ///   - tag: 请求标记
+   ///   - retry: 重试次数（0为不进行重试请求，只请求一次）
+   ///   - progress: 进度回调
+   ///   - success: 成功回调
+   ///   - failure: 失败回调
+    class func postRequest(url: String, params: Any, tag: String?, retry: NSInteger, progress: progressBlock?, success: successBlock?, failure: failureBlock?) -> URLSessionDataTask {
+        let sessionManager = self.getSessionManger()
+        sessionManager.requestSerializer.timeoutInterval = kTimeoutInterval       // 请求超时设置
+        
+        let dataTask = sessionManager.get(url, parameters: params, headers: nil, progress: nil, success: { (task, result) in
+            success!(task, result)
+        }, failure: { (task, Error) in
+            failure!(task, Error)
+        })
+        return dataTask!
+    }
     
     
-    //MARK: - POST
-       /// POST请求
-       ///
-       /// - Parameters:
-       ///   - url: 地址
-       ///   - param: 参数
-       ///   - tag: 请求标记
-       ///   - retry: 重试次数（0为不进行重试请求，只请求一次）
-       ///   - progress: 进度回调
-       ///   - success: 成功回调
-       ///   - failure: 失败回调
+//MARK: - 队列操作参考
 //       class func postRequest(url: String, param: Any, tag: String?, retry: NSInteger, progress: progressBlock?, success: successBlock?, failure: failureBlock?){
            
 //        let task = manager.post(url, parameters: param, headers: nil, progress: progress, success: { (task, responseObj) in
