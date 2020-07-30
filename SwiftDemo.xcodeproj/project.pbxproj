@@ -36,6 +36,9 @@
 		3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F92457CACF0084FDCC /* MineController.swift */; };
 		3ED775DC24CFD69200976795 /* nameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED775DB24CFD69200976795 /* nameListController.swift */; };
 		3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */; };
+		3EE5895E24D29E1700BAC9D0 /* UBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5895D24D29E1700BAC9D0 /* UBaseViewController.swift */; };
+		3EE5896024D29F4E00BAC9D0 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5895F24D29F4E00BAC9D0 /* UIColorExtension.swift */; };
+		3EE5896224D29FA200BAC9D0 /* UGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5896124D29FA200BAC9D0 /* UGlobal.swift */; };
 		3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1923D4733F0054A537 /* AppDelegate.swift */; };
 		3EEEAE2323D473420054A537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2223D473420054A537 /* Assets.xcassets */; };
 		3EEEAE2623D473420054A537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */; };
@@ -74,6 +77,9 @@
 		3EBB58F92457CACF0084FDCC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 		3ED775DB24CFD69200976795 /* nameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nameListController.swift; path = SwiftDemo/FunctionModule/Appdelegate/nameListController.swift; sourceTree = SOURCE_ROOT; };
 		3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
+		3EE5895D24D29E1700BAC9D0 /* UBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseViewController.swift; sourceTree = "<group>"; };
+		3EE5895F24D29F4E00BAC9D0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		3EE5896124D29FA200BAC9D0 /* UGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UGlobal.swift; sourceTree = "<group>"; };
 		3EEEAE1623D4733F0054A537 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEEAE1923D4733F0054A537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEEAE2223D473420054A537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				3E7C91492462935A00712328 /* UIScreenExtension.swift */,
 				3E4B5FAE24ADDEF8006351B0 /* DictionaryExtension.swift */,
 				3E4B5FB024ADDF4A006351B0 /* ArrayExtensions.swift */,
+				3EE5895F24D29F4E00BAC9D0 /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -302,6 +309,7 @@
 			children = (
 				3EE5895924D14C5700BAC9D0 /* Base */,
 				3EE5895824D14C2800BAC9D0 /* Home */,
+				3EE5896124D29FA200BAC9D0 /* UGlobal.swift */,
 			);
 			path = U17Module;
 			sourceTree = "<group>";
@@ -325,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */,
+				3EE5895D24D29E1700BAC9D0 /* UBaseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -491,6 +500,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE5896224D29FA200BAC9D0 /* UGlobal.swift in Sources */,
 				3EBB58EB2457C3150084FDCC /* BaseViewController.swift in Sources */,
 				3E7C914A2462935A00712328 /* UIScreenExtension.swift in Sources */,
 				3E7C91472462905200712328 /* StringDefine.swift in Sources */,
@@ -502,6 +512,7 @@
 				3E8520F424C6C4540045B465 /* InterfaceServer.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
 				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
+				3EE5896024D29F4E00BAC9D0 /* UIColorExtension.swift in Sources */,
 				3E89313024BECBA3008DFB8F /* RequestBase.swift in Sources */,
 				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
 				3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */,
@@ -511,6 +522,7 @@
 				3E4FCEC42457FA050017F883 /* DeviceDefine.swift in Sources */,
 				3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */,
 				3E9097D9245ABBDD00F27D89 /* Global.swift in Sources */,
+				3EE5895E24D29E1700BAC9D0 /* UBaseViewController.swift in Sources */,
 				3E4FCECD245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3E4FCEC8245820D60017F883 /* BaseTabBarController.swift in Sources */,
 				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,

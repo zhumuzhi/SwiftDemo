@@ -8,22 +8,14 @@
 
 import UIKit
 
-class HomeController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeController: UIPageViewController {
     
-    // MARK:- Property
-    
-    
-
     // MARK:- LifeCycle
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = UIColor.white
         
-        self.view.addSubview(collectionView)
-        
-        
+        configNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -32,56 +24,16 @@ class HomeController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
+    func configNavigationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(selectAction))
+    }
     
-    // MARK:- LoadData
-    
-
-    
-    // MARK:- Method
-    
-    @objc private func changeSex() {
-        
-        
+    //MARK: - Event
+    @objc private func selectAction() {
+        navigationController?.pushViewController(UIViewController(), animated: true)
     }
     
     
-    // MARK:- LazyGet
-    
-    private lazy var sexTypeButton: UIButton = {
-        let button = UIButton(type: .custom)
-        button.setTitleColor(UIColor.black, for: .normal)
-        button.addTarget(self, action: #selector(changeSex), for: .touchUpInside)
-        return button
-    }()
-    
-    private lazy var collectionView: UICollectionView  = {
-//        let layout = UCollectionViewSectionBackgroundLayout()
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumInteritemSpacing = 5
-        layout.minimumLineSpacing = 10
-
-        let collectionView = UICollectionView(frame: CGRect(x:0, y:CGFloat(kSafeAreaTopHeight), width:kScreenWidth, height:kScreenHeight - CGFloat(kSafeAreaTopHeight) - CGFloat(kBottomAreaHeight)), collectionViewLayout: layout)
-        collectionView.backgroundColor = UIColor.white
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.alwaysBounceVertical = true
-//        collectionView.contentInset = UIEdgeInsets(top: kScreenWidth * 0.467, left: 0, bottom: 0, right: 0)
-        collectionView.scrollIndicatorInsets = collectionView.contentInset
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier:"UICollectionViewCell")
-        return collectionView
-    }()
-    
-    // MARK:- UICollectionViewDataSource
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        155
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
-        cell.backgroundColor = UIColor.randomColor()
-        return cell
-    }
     
 }
 
