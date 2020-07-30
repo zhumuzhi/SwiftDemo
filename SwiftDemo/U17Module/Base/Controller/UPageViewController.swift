@@ -16,7 +16,7 @@ enum UPageStyle {
 }
 
 
-class UPageViewController: UIViewController {
+class UPageViewController: UBaseViewController {
     
     var pageStyle: UPageStyle!
     private var currentSelectIndes: Int = 0

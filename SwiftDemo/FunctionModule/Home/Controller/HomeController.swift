@@ -8,14 +8,13 @@
 
 import UIKit
 
-class HomeController: UIPageViewController {
+class HomeController: UPageViewController {
     
     // MARK:- LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
-        configNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,8 +23,11 @@ class HomeController: UIPageViewController {
     }
     
     
-    func configNavigationBar() {
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"), style: UIBarButtonItem.Style.plain, target: self, action: #selector(selectAction))
+    override func configNaviagationBar() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "nav_search"),
+                                                            style: UIBarButtonItem.Style.plain,
+                                                            target: self,
+                                                            action: #selector(selectAction))
     }
     
     //MARK: - Event
