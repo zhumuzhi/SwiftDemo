@@ -29,9 +29,11 @@ PODS:
     - Alamofire (~> 5.0)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
+  - Then (2.6.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire
   - HandyJSON
   - HMSegmentedControl
   - LLCycleScrollView
@@ -39,6 +41,7 @@ DEPENDENCIES:
   - Moya
   - SnapKit
   - SwiftyJSON
+  - Then
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -52,6 +55,7 @@ SPEC REPOS:
     - Moya
     - SnapKit
     - SwiftyJSON
+    - Then
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
@@ -64,7 +68,8 @@ SPEC CHECKSUMS:
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: 7334bb13c06f50645eee9c5bc67545f2f3d2358f
+PODFILE CHECKSUM: c5c0a70791a4efe723a3644119ba85c4b85e0e5e
 
 COCOAPODS: 1.9.1

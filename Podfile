@@ -11,7 +11,7 @@ target 'SwiftDemo' do
 # 网络请求
 pod 'Moya'
 pod 'AFNetworking'
-
+pod 'Alamofire'
 # 数据处理
 pod 'HandyJSON'
 pod 'SwiftyJSON'
@@ -20,13 +20,15 @@ pod 'SwiftyJSON'
 pod 'SnapKit'
 
 # ========== UI组件 ==========
-
 # HUD
 pod 'MBProgressHUD'
 # 图片轮播
 pod 'LLCycleScrollView'
 # Segment
 pod 'HMSegmentedControl'
+
+# ========== 语法糖 ==========
+pod "Then"
 
 end
 

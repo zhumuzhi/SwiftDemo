@@ -35,6 +35,7 @@
 		3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F72457CAC30084FDCC /* LifeController.swift */; };
 		3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F92457CACF0084FDCC /* MineController.swift */; };
 		3ED775DC24CFD69200976795 /* nameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED775DB24CFD69200976795 /* nameListController.swift */; };
+		3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */; };
 		3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1923D4733F0054A537 /* AppDelegate.swift */; };
 		3EEEAE2323D473420054A537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2223D473420054A537 /* Assets.xcassets */; };
 		3EEEAE2623D473420054A537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		3EBB58F72457CAC30084FDCC /* LifeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeController.swift; sourceTree = "<group>"; };
 		3EBB58F92457CACF0084FDCC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 		3ED775DB24CFD69200976795 /* nameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nameListController.swift; path = SwiftDemo/FunctionModule/Appdelegate/nameListController.swift; sourceTree = SOURCE_ROOT; };
+		3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
 		3EEEAE1623D4733F0054A537 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEEAE1923D4733F0054A537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEEAE2223D473420054A537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -322,6 +324,7 @@
 		3EE5895A24D14D7E00BAC9D0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,
 				3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */,
 				3ED775DC24CFD69200976795 /* nameListController.swift in Sources */,
+				3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */,
 				3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */,
 				3E4FCEC624580B5C0017F883 /* U17BaseTabBarController.swift in Sources */,
 				3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */,
