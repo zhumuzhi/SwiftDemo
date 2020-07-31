@@ -36,6 +36,7 @@ DEPENDENCIES:
   - Alamofire
   - HandyJSON
   - HMSegmentedControl
+  - Kingfisher
   - LLCycleScrollView
   - MBProgressHUD
   - Moya
@@ -70,6 +71,6 @@ SPEC CHECKSUMS:
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
 
-PODFILE CHECKSUM: c5c0a70791a4efe723a3644119ba85c4b85e0e5e
+PODFILE CHECKSUM: 67b0c10458ba6adfb8ab54c835838bd9218d2268
 
 COCOAPODS: 1.9.1

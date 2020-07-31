@@ -12,13 +12,12 @@ target 'SwiftDemo' do
 pod 'Moya'
 pod 'AFNetworking'
 pod 'Alamofire'
+pod 'Kingfisher'
 # 数据处理
 pod 'HandyJSON'
 pod 'SwiftyJSON'
-
 # 页面布局
 pod 'SnapKit'
-
 # ========== UI组件 ==========
 # HUD
 pod 'MBProgressHUD'
@@ -26,7 +25,6 @@ pod 'MBProgressHUD'
 pod 'LLCycleScrollView'
 # Segment
 pod 'HMSegmentedControl'
-
 # ========== 语法糖 ==========
 pod "Then"
 

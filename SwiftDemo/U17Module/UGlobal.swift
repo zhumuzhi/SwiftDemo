@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 //MARK: - 应用默认颜色
 extension UIColor {
