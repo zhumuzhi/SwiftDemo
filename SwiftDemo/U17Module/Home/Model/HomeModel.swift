@@ -9,23 +9,23 @@
 import Foundation
 import HandyJSON
 
-struct GalleryItemModel: HandyJSON {
-    var id: Int = 0
-    var linkType: Int = 0
-    var cover: String?
-    var ext: [ExtModel]?
-    var title: String?
-    var content: String?
-}
+//struct GalleryItemModel: HandyJSON {
+//    var id: Int = 0
+//    var linkType: Int = 0
+//    var cover: String?
+//    var ext: [ExtModel]?
+//    var title: String?
+//    var content: String?
+//}
 
-struct TextItemModel: HandyJSON {
-    var id: Int = 0
-    var linkType: Int = 0
-    var cover: String?
-    var ext: [ExtModel]?
-    var title: String?
-    var content: String?
-}
+//struct TextItemModel: HandyJSON {
+//    var id: Int = 0
+//    var linkType: Int = 0
+//    var cover: String?
+//    var ext: [ExtModel]?
+//    var title: String?
+//    var content: String?
+//}
 
 struct ComicListModel: HandyJSON {
     var comicType: UComicType = .none

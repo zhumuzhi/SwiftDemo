@@ -47,10 +47,10 @@ class UPageViewController: UBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        configUI()
+        
     }
     
-    func configUI() {
+    override func configUI() {
         guard let viewController = viewControllers else {
             return
         }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-//MRAK: 应用默认颜色
+//MARK: - 应用默认颜色
 extension UIColor {
     class var background: UIColor {
         return UIColor(r: 242, g: 242, b: 242)
@@ -18,4 +18,11 @@ extension UIColor {
     class var theme: UIColor {
         return UIColor(r: 29, g: 221, b: 43)
     }
+}
+
+
+//MARK: - UserDefaults-Key
+extension String {
+    static let searchHistoryKey = "searchHistoryKey"
+    static let sexTypeKey = "sexTypeKey"
 }
