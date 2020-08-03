@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class HomeController: UPageViewController {
     
     // MARK:- LifeCycle
@@ -19,7 +20,19 @@ class HomeController: UPageViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        InterfaceServer.getCateList()
+        
+        InterfaceServerHome.getCateList(success: { (task, result) in
+            
+            
+            print(result!)
+            
+        }) { (task, Error) in
+            if Error != nil {
+                print(Error!)
+                return
+            }
+        }
+        
     }
     
     
@@ -32,7 +45,7 @@ class HomeController: UPageViewController {
     
     //MARK: - Event
     @objc private func selectAction() {
-        navigationController?.pushViewController(UIViewController(), animated: true)
+        navigationController?.pushViewController(URecommendController(), animated: true)
     }
     
     

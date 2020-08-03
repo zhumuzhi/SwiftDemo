@@ -21,7 +21,7 @@
 		3E7C914A2462935A00712328 /* UIScreenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C91492462935A00712328 /* UIScreenExtension.swift */; };
 		3E7C914D24629D6600712328 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C914C24629D6600712328 /* HomeModel.swift */; };
 		3E8520F224C6B76D0045B465 /* testController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8520F124C6B76D0045B465 /* testController.swift */; };
-		3E8520F424C6C4540045B465 /* InterfaceServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8520F324C6C4540045B465 /* InterfaceServer.swift */; };
+		3E8520F424C6C4540045B465 /* InterfaceServerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8520F324C6C4540045B465 /* InterfaceServerHome.swift */; };
 		3E89313024BECBA3008DFB8F /* RequestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89312F24BECBA3008DFB8F /* RequestBase.swift */; };
 		3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D0245AB16000F27D89 /* HomeComicCell.swift */; };
 		3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */; };
@@ -70,7 +70,7 @@
 		3E7C91492462935A00712328 /* UIScreenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScreenExtension.swift; sourceTree = "<group>"; };
 		3E7C914C24629D6600712328 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		3E8520F124C6B76D0045B465 /* testController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testController.swift; sourceTree = "<group>"; };
-		3E8520F324C6C4540045B465 /* InterfaceServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceServer.swift; sourceTree = "<group>"; };
+		3E8520F324C6C4540045B465 /* InterfaceServerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceServerHome.swift; sourceTree = "<group>"; };
 		3E89312F24BECBA3008DFB8F /* RequestBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBase.swift; sourceTree = "<group>"; };
 		3E9097D0245AB16000F27D89 /* HomeComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeComicCell.swift; sourceTree = "<group>"; };
 		3E9097D2245AB19000F27D89 /* HomeBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardCell.swift; sourceTree = "<group>"; };
@@ -179,7 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				3E89312F24BECBA3008DFB8F /* RequestBase.swift */,
-				3E8520F324C6C4540045B465 /* InterfaceServer.swift */,
+				3E8520F324C6C4540045B465 /* InterfaceServerHome.swift */,
 			);
 			path = NetWorkAFN;
 			sourceTree = "<group>";
@@ -223,6 +223,7 @@
 		3EBB58E42457BF630084FDCC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				3EE5897824D7C05B00BAC9D0 /* NetWorkAlamofire */,
 				3E89312E24BECB56008DFB8F /* NetWorkAFN */,
 				3E4B5FB224AF07E9006351B0 /* NetWork(Moya) */,
 				3E7C914E2462A2D800712328 /* APIList */,
@@ -384,6 +385,13 @@
 				3EE5897624D4136B00BAC9D0 /* UComicItem.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3EE5897824D7C05B00BAC9D0 /* NetWorkAlamofire */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorkAlamofire;
 			sourceTree = "<group>";
 		};
 		3EEEAE0D23D4733F0054A537 = {
@@ -563,7 +571,7 @@
 				3E4B5FBC24AF0B42006351B0 /* API.swift in Sources */,
 				3E4B5FAF24ADDEF8006351B0 /* DictionaryExtension.swift in Sources */,
 				3EE5896C24D3CB5600BAC9D0 /* UComicListModel.swift in Sources */,
-				3E8520F424C6C4540045B465 /* InterfaceServer.swift in Sources */,
+				3E8520F424C6C4540045B465 /* InterfaceServerHome.swift in Sources */,
 				3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */,
 				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
 				3EE5896024D29F4E00BAC9D0 /* UIColorExtension.swift in Sources */,

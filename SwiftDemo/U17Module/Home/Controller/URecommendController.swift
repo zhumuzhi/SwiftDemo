@@ -67,12 +67,21 @@ class URecommendController: UBaseViewController {
     
     //MARK: - RequestData
     private func loadData(_ changeSex:Bool) {
-        
+        InterfaceServerHome.getBoutiqueList(success: { (task, result) in
+            print(result!)
+        }) { (task, Error) in
+            if Error != nil {
+                print(Error!)
+                return
+            }
+        }
     }
     
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadData(true)
         
     }
     
