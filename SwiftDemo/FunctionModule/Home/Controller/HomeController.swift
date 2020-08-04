@@ -45,7 +45,9 @@ class HomeController: UPageViewController {
     
     //MARK: - Event
     @objc private func selectAction() {
-        navigationController?.pushViewController(URecommendController(), animated: true)
+//        navigationController?.pushViewController(URecommendController(), animated: true)
+        navigationController?.pushViewController(listController(), animated: true)
+        
     }
     
     

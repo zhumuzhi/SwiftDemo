@@ -47,6 +47,9 @@
 		3EE5896E24D3CBAF00BAC9D0 /* UExtModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5896D24D3CBAF00BAC9D0 /* UExtModel.swift */; };
 		3EE5897524D4133700BAC9D0 /* UBoardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5897424D4133700BAC9D0 /* UBoardItem.swift */; };
 		3EE5897724D4136B00BAC9D0 /* UComicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5897624D4136B00BAC9D0 /* UComicItem.swift */; };
+		3EE5897A24D7D3A300BAC9D0 /* NetWorkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5897924D7D3A300BAC9D0 /* NetWorkTool.swift */; };
+		3EE5897C24D92F2100BAC9D0 /* listController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5897B24D92F2100BAC9D0 /* listController.swift */; };
+		3EE5898024D9325800BAC9D0 /* listCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5897F24D9325800BAC9D0 /* listCell.swift */; };
 		3EEEAE1A23D4733F0054A537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEEAE1923D4733F0054A537 /* AppDelegate.swift */; };
 		3EEEAE2323D473420054A537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2223D473420054A537 /* Assets.xcassets */; };
 		3EEEAE2623D473420054A537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EEEAE2423D473420054A537 /* LaunchScreen.storyboard */; };
@@ -83,7 +86,7 @@
 		3EBB58F52457CAB20084FDCC /* TopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
 		3EBB58F72457CAC30084FDCC /* LifeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeController.swift; sourceTree = "<group>"; };
 		3EBB58F92457CACF0084FDCC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
-		3ED775DB24CFD69200976795 /* nameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nameListController.swift; path = SwiftDemo/FunctionModule/Appdelegate/nameListController.swift; sourceTree = SOURCE_ROOT; };
+		3ED775DB24CFD69200976795 /* nameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nameListController.swift; path = SwiftDemo/FunctionModule/DemoModule/DemoController/nameListController.swift; sourceTree = SOURCE_ROOT; };
 		3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
 		3EE5895D24D29E1700BAC9D0 /* UBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBaseViewController.swift; sourceTree = "<group>"; };
 		3EE5895F24D29F4E00BAC9D0 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
@@ -96,6 +99,9 @@
 		3EE5896D24D3CBAF00BAC9D0 /* UExtModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UExtModel.swift; sourceTree = "<group>"; };
 		3EE5897424D4133700BAC9D0 /* UBoardItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UBoardItem.swift; path = SwiftDemo/U17Module/Home/Controller/UBoardItem.swift; sourceTree = SOURCE_ROOT; };
 		3EE5897624D4136B00BAC9D0 /* UComicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicItem.swift; sourceTree = "<group>"; };
+		3EE5897924D7D3A300BAC9D0 /* NetWorkTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkTool.swift; sourceTree = "<group>"; };
+		3EE5897B24D92F2100BAC9D0 /* listController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = listController.swift; path = SwiftDemo/FunctionModule/DemoModule/DemoController/listController.swift; sourceTree = SOURCE_ROOT; };
+		3EE5897F24D9325800BAC9D0 /* listCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listCell.swift; sourceTree = "<group>"; };
 		3EEEAE1623D4733F0054A537 /* SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEEAE1923D4733F0054A537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEEAE2223D473420054A537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,13 +181,13 @@
 			path = APIList;
 			sourceTree = "<group>";
 		};
-		3E89312E24BECB56008DFB8F /* NetWorkAFN */ = {
+		3E89312E24BECB56008DFB8F /* NetWork(AFN) */ = {
 			isa = PBXGroup;
 			children = (
 				3E89312F24BECBA3008DFB8F /* RequestBase.swift */,
 				3E8520F324C6C4540045B465 /* InterfaceServerHome.swift */,
 			);
-			path = NetWorkAFN;
+			path = "NetWork(AFN)";
 			sourceTree = "<group>";
 		};
 		3E9097CE245AB12300F27D89 /* Controller */ = {
@@ -223,8 +229,8 @@
 		3EBB58E42457BF630084FDCC /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				3EE5897824D7C05B00BAC9D0 /* NetWorkAlamofire */,
-				3E89312E24BECB56008DFB8F /* NetWorkAFN */,
+				3EE5897824D7C05B00BAC9D0 /* NetWork(Alamofire) */,
+				3E89312E24BECB56008DFB8F /* NetWork(AFN) */,
 				3E4B5FB224AF07E9006351B0 /* NetWork(Moya) */,
 				3E7C914E2462A2D800712328 /* APIList */,
 				3E7C91482462932D00712328 /* Extension */,
@@ -314,8 +320,8 @@
 		3ED775DA24CFD66100976795 /* DemoModule */ = {
 			isa = PBXGroup;
 			children = (
-				3E8520F124C6B76D0045B465 /* testController.swift */,
-				3ED775DB24CFD69200976795 /* nameListController.swift */,
+				3EE5897E24D9324300BAC9D0 /* DemoView */,
+				3EE5897D24D9323500BAC9D0 /* DemoController */,
 			);
 			path = DemoModule;
 			sourceTree = "<group>";
@@ -387,11 +393,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3EE5897824D7C05B00BAC9D0 /* NetWorkAlamofire */ = {
+		3EE5897824D7C05B00BAC9D0 /* NetWork(Alamofire) */ = {
 			isa = PBXGroup;
 			children = (
+				3EE5897924D7D3A300BAC9D0 /* NetWorkTool.swift */,
 			);
-			path = NetWorkAlamofire;
+			path = "NetWork(Alamofire)";
+			sourceTree = "<group>";
+		};
+		3EE5897D24D9323500BAC9D0 /* DemoController */ = {
+			isa = PBXGroup;
+			children = (
+				3E8520F124C6B76D0045B465 /* testController.swift */,
+				3ED775DB24CFD69200976795 /* nameListController.swift */,
+				3EE5897B24D92F2100BAC9D0 /* listController.swift */,
+			);
+			path = DemoController;
+			sourceTree = "<group>";
+		};
+		3EE5897E24D9324300BAC9D0 /* DemoView */ = {
+			isa = PBXGroup;
+			children = (
+				3EE5897F24D9325800BAC9D0 /* listCell.swift */,
+			);
+			path = DemoView;
 			sourceTree = "<group>";
 		};
 		3EEEAE0D23D4733F0054A537 = {
@@ -566,6 +591,7 @@
 				3EE5896E24D3CBAF00BAC9D0 /* UExtModel.swift in Sources */,
 				3E4B5FB124ADDF4A006351B0 /* ArrayExtensions.swift in Sources */,
 				3E7C914D24629D6600712328 /* HomeModel.swift in Sources */,
+				3EE5897C24D92F2100BAC9D0 /* listController.swift in Sources */,
 				3EE5896424D2AC7400BAC9D0 /* UNavigationController.swift in Sources */,
 				3EE5896A24D3CB2E00BAC9D0 /* UTextItemModel.swift in Sources */,
 				3E4B5FBC24AF0B42006351B0 /* API.swift in Sources */,
@@ -576,6 +602,7 @@
 				3E9097D3245AB19000F27D89 /* HomeBoardCell.swift in Sources */,
 				3EE5896024D29F4E00BAC9D0 /* UIColorExtension.swift in Sources */,
 				3E89313024BECBA3008DFB8F /* RequestBase.swift in Sources */,
+				3EE5897A24D7D3A300BAC9D0 /* NetWorkTool.swift in Sources */,
 				3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */,
 				3E9097D7245ABAA900F27D89 /* BaseCollectionViewCell.swift in Sources */,
 				3EE5897724D4136B00BAC9D0 /* UComicItem.swift in Sources */,
@@ -595,6 +622,7 @@
 				3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */,
 				3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */,
 				3E4FCEC624580B5C0017F883 /* U17BaseTabBarController.swift in Sources */,
+				3EE5898024D9325800BAC9D0 /* listCell.swift in Sources */,
 				3E9097D1245AB16000F27D89 /* HomeComicCell.swift in Sources */,
 				3E4B5FAD24ADDAD0006351B0 /* UModel.swift in Sources */,
 			);
