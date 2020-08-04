@@ -14,7 +14,6 @@ class listController: UIViewController {
     var dataArray = ["Eggs", "Flour", "Chocolate chips"]
     var chooseDatas = [false, false, false]
     
-    
     // MARK:- LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +23,6 @@ class listController: UIViewController {
         self.view.addSubview(self.tableView)
     }
     
-    
     //MARK: - Lazy
     private lazy var tableView: UITableView = {
         let tableView = UITableView (frame: CGRect(x: 0, y: CGFloat(kSafeAreaTopHeight), width: kScreenWidth, height: kScreenHeight - CGFloat(kSafeAreaTopHeight) - CGFloat(kSafeAreaBottomHeight)), style: .plain)
@@ -32,6 +30,7 @@ class listController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(listCell.self, forCellReuseIdentifier: "listCellId")
+        tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
         return tableView
     }()
     
@@ -49,6 +48,7 @@ extension listController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "listCellId") as? listCell
         cell?.titleName = self.dataArray[indexPath.row]
         cell?.isChoose = self.chooseDatas[indexPath.row]
+        
         return cell!
     }
     

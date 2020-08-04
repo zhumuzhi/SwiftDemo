@@ -31,7 +31,7 @@ class listCell: UITableViewCell {
     //MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style:style, reuseIdentifier: reuseIdentifier)
-      
+        
         self.contentView.addSubview(self.iconView)
         self.contentView.addSubview(self.title)
     }
