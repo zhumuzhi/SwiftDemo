@@ -23,7 +23,7 @@ class DCTTBaseTabBarController: UITabBarController {
         
         let itemTitleArray = [
             "首页",
-            "生活",
+            "发现",
             "占位",
             "话题",
             "个人"
@@ -47,7 +47,7 @@ class DCTTBaseTabBarController: UITabBarController {
         
         let controllersName = [
             "HomeController",
-            "LifeController",
+            "DiscoverController",
             "BaseViewController",
             "TopicController",
             "MineController"]

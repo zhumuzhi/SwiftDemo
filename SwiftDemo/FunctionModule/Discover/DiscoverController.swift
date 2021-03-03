@@ -1,5 +1,5 @@
 //
-//  LifeController.swift
+//  DiscoverController.swift
 //  SwiftDemo
 //
 //  Created by zhumuzhi on 2020/4/28.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class LifeController: UIViewController {
+class DiscoverController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

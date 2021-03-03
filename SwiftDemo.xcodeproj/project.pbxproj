@@ -32,7 +32,7 @@
 		3EBB58EE2457C3DB0084FDCC /* ColorsFontDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */; };
 		3EBB58F42457CAA00084FDCC /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F32457CAA00084FDCC /* HomeController.swift */; };
 		3EBB58F62457CAB20084FDCC /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F52457CAB20084FDCC /* TopicController.swift */; };
-		3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F72457CAC30084FDCC /* LifeController.swift */; };
+		3EBB58F82457CAC30084FDCC /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F72457CAC30084FDCC /* DiscoverController.swift */; };
 		3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBB58F92457CACF0084FDCC /* MineController.swift */; };
 		3ED775DC24CFD69200976795 /* nameListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED775DB24CFD69200976795 /* nameListController.swift */; };
 		3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */; };
@@ -84,7 +84,7 @@
 		3EBB58ED2457C3DB0084FDCC /* ColorsFontDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsFontDefine.swift; sourceTree = "<group>"; };
 		3EBB58F32457CAA00084FDCC /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		3EBB58F52457CAB20084FDCC /* TopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
-		3EBB58F72457CAC30084FDCC /* LifeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeController.swift; sourceTree = "<group>"; };
+		3EBB58F72457CAC30084FDCC /* DiscoverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		3EBB58F92457CACF0084FDCC /* MineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineController.swift; sourceTree = "<group>"; };
 		3ED775DB24CFD69200976795 /* nameListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = nameListController.swift; path = SwiftDemo/FunctionModule/DemoModule/DemoController/nameListController.swift; sourceTree = SOURCE_ROOT; };
 		3EE5895B24D14DDC00BAC9D0 /* UPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPageViewController.swift; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 				3ED775DA24CFD66100976795 /* DemoModule */,
 				3EBB58EF2457CA5E0084FDCC /* Home */,
 				3EBB58F02457CA670084FDCC /* Topic */,
-				3EBB58F12457CA730084FDCC /* Life */,
+				3EBB58F12457CA730084FDCC /* Discover */,
 				3EBB58F22457CA7F0084FDCC /* Mine */,
 				3EBB58E72457BFBA0084FDCC /* Appdelegate */,
 			);
@@ -301,12 +301,12 @@
 			path = Topic;
 			sourceTree = "<group>";
 		};
-		3EBB58F12457CA730084FDCC /* Life */ = {
+		3EBB58F12457CA730084FDCC /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				3EBB58F72457CAC30084FDCC /* LifeController.swift */,
+				3EBB58F72457CAC30084FDCC /* DiscoverController.swift */,
 			);
-			path = Life;
+			path = Discover;
 			sourceTree = "<group>";
 		};
 		3EBB58F22457CA7F0084FDCC /* Mine */ = {
@@ -616,7 +616,7 @@
 				3EE5895E24D29E1700BAC9D0 /* UBaseViewController.swift in Sources */,
 				3E4FCECD245857760017F883 /* UCollectionViewSectionBackgroundLayout.swift in Sources */,
 				3E4FCEC8245820D60017F883 /* BaseTabBarController.swift in Sources */,
-				3EBB58F82457CAC30084FDCC /* LifeController.swift in Sources */,
+				3EBB58F82457CAC30084FDCC /* DiscoverController.swift in Sources */,
 				3EBB58FA2457CACF0084FDCC /* MineController.swift in Sources */,
 				3ED775DC24CFD69200976795 /* nameListController.swift in Sources */,
 				3EE5895C24D14DDC00BAC9D0 /* UPageViewController.swift in Sources */,

@@ -30,8 +30,8 @@ class BaseTabBarController: UITabBarController {
                                selectedImage: UIImage(named: "tabbar_message_center_selected"))
         
         /// 发现
-        let lifeVC = LifeController()
-        addChildViewController(lifeVC,
+        let discoverVC = DiscoverController()
+        addChildViewController(discoverVC,
                                title: "发现",
                                image: UIImage(named: "tabbar_discover"),
                                selectedImage: UIImage(named: "tabbar_discover_selected"))

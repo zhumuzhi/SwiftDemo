@@ -33,7 +33,7 @@ class U17BaseTabBarController: UITabBarController {
         
         
         /// 书架
-        let bookVC = LifeController()
+        let bookVC = DiscoverController()
         addChildViewController(bookVC,
                                title: "消息",
                                image: UIImage(named: "tabbar_message_center"),
