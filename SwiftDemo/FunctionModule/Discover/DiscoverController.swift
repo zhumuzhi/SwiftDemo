@@ -10,7 +10,7 @@ import UIKit
 
 class DiscoverController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var dataArray = ["案例1", "案例2", "案例3", "案例4"]
+    var dataArray = ["CollectionView", "案例2", "案例3", "案例4"]
     
     
     //MARK: - LifeCycle
@@ -42,6 +42,11 @@ class DiscoverController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        NSLog("选选中了第\(indexPath.section)-\(indexPath.row)")
         NSLog("选选中了:\(dataArray[indexPath.row])")
+        
+        if dataArray[indexPath.row] == "CollectionView" {
+            self.navigationController?.pushViewController(NormalCollectionControler(), animated: true)
+        }
+        
     }
     
     //MARK: - Lazy
