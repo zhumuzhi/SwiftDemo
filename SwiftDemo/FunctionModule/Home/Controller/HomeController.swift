@@ -16,6 +16,8 @@ class HomeController: UPageViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         
+//        OrderAuth.hasApplyForCancelButton(order_status: 2, hasBuyAuth: true, cancle_apply_show: false)
+                
     }
     
     override func viewWillAppear(_ animated: Bool) {
