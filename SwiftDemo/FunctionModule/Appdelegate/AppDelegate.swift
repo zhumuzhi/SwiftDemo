@@ -18,9 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegat
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        let tabBarController = BaseTabBarController()
-        tabBarController.delegate = self;
-        window?.rootViewController = tabBarController;
+        
+//        let tabBarController = BaseTabBarController()
+//        tabBarController.delegate = self;
+//        window?.rootViewController = tabBarController;
+        
+        let guideControler = GuideController()
+        window?.rootViewController = guideControler;
+        
         window?.makeKeyAndVisible()
         
         return true

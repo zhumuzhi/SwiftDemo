@@ -44,7 +44,9 @@ class DiscoverController: UIViewController, UITableViewDataSource, UITableViewDe
         NSLog("选选中了:\(dataArray[indexPath.row])")
         
         if dataArray[indexPath.row] == "CollectionView" {
-            self.navigationController?.pushViewController(NormalCollectionControler(), animated: true)
+            self.navigationController?.hidesBarsOnTap = true
+            self.navigationController?.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(GuideController(), animated: true)
         }
         
     }
